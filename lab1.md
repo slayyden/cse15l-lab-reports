@@ -18,4 +18,5 @@ You should now be able to launch VSCode from your applications folder. The appli
 ### Part 2a: Obtaining Login Info
 Each UCSD class will have its own remote login info. To find it, visit [this link](https://sdacs.ucsd.edu/~icc/index.php). 
 <img width="1261" alt="image" src="https://user-images.githubusercontent.com/26509702/212186958-0b189f8c-3022-4ddc-846d-2c835ade1f83.png">
-Under "Forgot Username or New Student?" enter your last name and PID.
+Under "Forgot Username or New Student?" enter your last name and PID. This should show you an account name specific to your class. It will likely have the class name in it. For example, every account for CSE 15L in Winter 2023 starts with "cse15Lwi23". **You must reset your password for the account before you can use it.** Details for doing so are in [this document](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit).
+### Part 2b: Logging In
