@@ -22,6 +22,6 @@ Under "Forgot Username or New Student?" enter your last name and PID. This shoul
 ### Part 2b: Logging In
 Open a terminal by going to the top bar and clicking Terminal -> New Terminal. You can connect remotely by typing 
 ```
-ssh ___________@ieng6.ucsd.edu 
+$ ssh ___________@ieng6.ucsd.edu 
 ```
 Fill in the blank with your username.
