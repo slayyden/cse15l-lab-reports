@@ -24,4 +24,4 @@ Open a terminal by going to the top bar and clicking Terminal -> New Terminal. Y
 '''
 ssh ___________@ieng6.ucsd.edu 
 '''
-(Do not include the quotation marks and 
+Fill in the blank with your username.
