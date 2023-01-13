@@ -24,4 +24,10 @@ Open a terminal by going to the top bar and clicking Terminal -> New Terminal. Y
 ```
 $ ssh ___________@ieng6.ucsd.edu 
 ```
-Fill in the blank with your username.
+Fill in the blank with your username. 
+You may get a message like this (along with some other text):
+
+```
+$ Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+```
+Type yes. You will then be asked to enter a password. Enter the password you set. While typing it in, you won't see anything change, but the keystrokes are still being registered.
