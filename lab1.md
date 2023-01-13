@@ -37,7 +37,5 @@ Type yes. You will then be asked to enter a password. Enter the password you set
 
 ## Part 3: Commands
 You can now use Linux commands just like any other computer. It's probably a good idea to start by finding out where you are. You can use `pwd` (short for "print working directory") to find out where you are: \
-
 <img width="292" alt="image" src="https://user-images.githubusercontent.com/26509702/212219388-36992e51-857e-4b53-80df-649d3767f61f.png">\
-
 You can also use other commands like `ls`, `cd`, `cat`, etc. 
