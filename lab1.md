@@ -31,9 +31,13 @@ You may get a message like this (along with some other text):
 $ Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 ```
 Type yes. You will then be asked to enter a password. Enter the password you set. While typing it in, you won't see anything change, but the keystrokes are still being registered. After that, you should be connected and see something like this:
+
 <img width="349" alt="image" src="https://user-images.githubusercontent.com/26509702/212217782-0bd05d9a-8a98-4293-bb77-e17ef60c4ee8.png">
 
+
 ## Part 3: Commands
-You can now use Linux commands just like any other computer. It's probably a good idea to start by finding out where you are. You can use `pwd` (short for "print working directory") to find out where you are:
-<img width="292" alt="image" src="https://user-images.githubusercontent.com/26509702/212219388-36992e51-857e-4b53-80df-649d3767f61f.png">
+You can now use Linux commands just like any other computer. It's probably a good idea to start by finding out where you are. You can use `pwd` (short for "print working directory") to find out where you are: \
+
+<img width="292" alt="image" src="https://user-images.githubusercontent.com/26509702/212219388-36992e51-857e-4b53-80df-649d3767f61f.png">\
+
 You can also use other commands like `ls`, `cd`, `cat`, etc. 
