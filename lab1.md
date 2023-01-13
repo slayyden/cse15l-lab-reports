@@ -31,3 +31,5 @@ You may get a message like this (along with some other text):
 $ Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 ```
 Type yes. You will then be asked to enter a password. Enter the password you set. While typing it in, you won't see anything change, but the keystrokes are still being registered.
+
+## Part 3: Commands
