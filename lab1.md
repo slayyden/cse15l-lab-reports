@@ -45,5 +45,4 @@ You can also use other commands like `ls`, `cd`, `cat`, etc. Here's a handy guid
 | pwd | prints the path to the directory you're working in |
 | ls | lists the files in the working directory |
 | cd \<path\> | changes the working diretory to the specified path |
-| cat 
-\<file\> | prints the contents of a file. can produce interesting results for non-text files|
+| cat \<file\> | prints the contents of a file. can produce interesting results for non-text files|
