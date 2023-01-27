@@ -115,21 +115,31 @@ static double averageWithoutLowest(double[] arr) {
 After bug fix:
 ```java
 static double averageWithoutLowest(double[] arr) {
+    // returns 0 for arrays of length 1 or 2
     if(arr.length < 2) { return 0.0; }
+
+    // we store both the lowest value and index
     double lowest = arr[0];
     double lowest_index = 0;
+
+    // find the lowest index
     for (int i = 1; i < arr.length; ++i) {
       if (arr[i] < lowest) {
         lowest = arr[i];
         lowest_index = i;
       }
     }
+
+    // sum all values except the lowest
     double sum = 0;
     for (int i = 0; i < arr.length; ++i) {
+      // exclude lowest
       if (i != lowest_index) {
         sum += arr[i];
       }
     }
+
+    // divide to get the average
     return sum / (arr.length - 1);
 }
 ```
