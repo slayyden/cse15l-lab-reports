@@ -71,3 +71,6 @@ We can add another line by modfying the url and pressing enter. This is the resu
 <img width="843" alt="image" src="https://user-images.githubusercontent.com/26509702/215207291-571b73c4-b3a4-4292-99c7-1027c53c0e43.png">
 
 Similarly to last time, `string` is modified to add our message on a new line. The `handleRequest` method is called with the argument being the URL once again. This URL is checked and parsed once again. `string` gets a new line and the message is concatenated to it. It is also returned, printing the updated `string` to the webpage.
+
+##Part 2: Debugging
+
