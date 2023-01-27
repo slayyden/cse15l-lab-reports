@@ -148,7 +148,7 @@ Now, all of our tests pass:
 <img width="208" alt="image" src="https://user-images.githubusercontent.com/26509702/215216283-bff7adb8-a868-40c8-8503-e70f6f8eda6e.png">
 
 
-All we had to do was store the lowest index in addition to the lowest value and exclude the element with the lowest index in our average calculation. This caueses the lowest value to only be exclduded once.
+All we had to do was store the lowest index in addition to the lowest value and exclude the element with the lowest index in our average calculation. This caueses the lowest value to only be excluded once.
 
 ## Part 3: What did I learn?
 I have two main takeaways from weeks 2 and 3. The first being how to make a web server in Java. I didn't really get the appeal of web development until now, but it's pretty cool to write some code and have it able to run on almost any device through a web browser. The second takeaway is that debugging code that someone else wrote is so much harder than code that I wrote. When I debug code, I look for mistakes that I would make, not all mistakes that could be made. This meanas that I didn't check for bugs that I considered to be so trivial that I would (probably) never make them. However, this is also a strength in collaborative debugging. Everyone has different blind spots and collaborative debugging can help with that.
