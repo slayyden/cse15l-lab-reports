@@ -91,6 +91,7 @@ public void testAverageWithoutLowest() {
 
 
 `input1` passes while `input2` fails:
+
 <img width="580" alt="image" src="https://user-images.githubusercontent.com/26509702/215214192-8437277e-80cd-4e4e-b057-52dad0a2675e.png">
 
 The average without the lowest with respect to `input2` is 2, since only one number is supposed to be removed for the average calculation. However, the method returns 0. 
