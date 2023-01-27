@@ -1,4 +1,4 @@
-### Part 1: Creating a Web Server
+## Part 1: Creating a Web Server
 I created a simple web server which remembers the strings that you enter into the url. The code is below:
 
 ```java
@@ -72,5 +72,19 @@ We can add another line by modfying the url and pressing enter. This is the resu
 
 Similarly to last time, `string` is modified to add our message on a new line. The `handleRequest` method is called with the argument being the URL once again. This URL is checked and parsed once again. `string` gets a new line and the message is concatenated to it. It is also returned, printing the updated `string` to the webpage.
 
-##Part 2: Debugging
+## Part 2: Debugging
+ArrayExamples.averageWithoutLowest() is a method with the following intended function:
+>Averages the numbers in the array (takes the mean), but leaves out the lowest number when calculating. Returns 0 if there are no elements or just 1 element in the array. 
+Below are two JUnit tests for ArrayExamples.averageWithoutLowest(). 
+```java
+@Test 
+public void testAverageWithoutLowest() {
+    double[] input1 = {};
+    assertEquals(0, ArrayExamples.averageWithoutLowest(input1), .00001);
+
+    double[] input2 = {2, 2};
+    assertEquals(2, ArrayExamples.averageWithoutLowest(input2), .00001);
+}
+```
+
 
