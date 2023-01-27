@@ -75,7 +75,9 @@ Similarly to last time, `string` is modified to add our message on a new line. T
 ## Part 2: Debugging
 ArrayExamples.averageWithoutLowest() is a method with the following intended function:
 >Averages the numbers in the array (takes the mean), but leaves out the lowest number when calculating. Returns 0 if there are no elements or just 1 element in the array. 
+
 Below are two JUnit tests for ArrayExamples.averageWithoutLowest(). 
+
 ```java
 @Test 
 public void testAverageWithoutLowest() {
@@ -88,3 +90,54 @@ public void testAverageWithoutLowest() {
 ```
 
 
+`input1` passes while `input2` fails:
+<img width="580" alt="image" src="https://user-images.githubusercontent.com/26509702/215214192-8437277e-80cd-4e4e-b057-52dad0a2675e.png">
+
+The average without the lowest with respect to `input2` is 2, since only one number is supposed to be removed for the average calculation. However, the method returns 0. 
+
+Before bug fix:
+```java
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+
+After bug fix:
+```java
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    double lowest_index = 0;
+    for (int i = 1; i < arr.length; ++i) {
+      if (arr[i] < lowest) {
+        lowest = arr[i];
+        lowest_index = i;
+      }
+    }
+    double sum = 0;
+    for (int i = 0; i < arr.length; ++i) {
+      if (i != lowest_index) {
+        sum += arr[i];
+      }
+    }
+    return sum / (arr.length - 1);
+}
+```
+Now, all of our tests pass:
+
+<img width="208" alt="image" src="https://user-images.githubusercontent.com/26509702/215216283-bff7adb8-a868-40c8-8503-e70f6f8eda6e.png">
+
+
+All we had to do was store the lowest index in addition to the lowest value and exclude the element with the lowest index in our average calculation. This caueses the lowest value to only be exclduded once.
+
+## Part 3: What did I learn?
+I have two main takeaways from weeks 2 and 3. The first being how to make a web server in Java. I didn't really get the appeal of web development until now, but it's pretty cool to write some code and have it able to run on almost any device through a web browser. The second takeaway is that debugging code that someone else wrote is so much harder than code that I wrote. When I debug code, I look for mistakes that I would make, not all mistakes that could be made. This meanas that I didn't check for bugs that I considered to be so trivial that I would (probably) never make them. However, this is also a strength in collaborative debugging. Everyone has different blind spots and collaborative debugging can help with that.
