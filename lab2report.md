@@ -59,3 +59,7 @@ class StringServer {
     }
 }
 ```
+
+Here are some screenshots of its functionality. Starting with a fresh run of the server and adding the path and query "/add-message?s=Java is a boilerplace driven object oriented language" we see the following:
+<img width="867" alt="image" src="https://user-images.githubusercontent.com/26509702/215205519-75edaa2b-c58b-4167-a8e7-64f7baeb2cb8.png">
+The text we put in the query has been added to our persistent string, `string`. By entering this URL, the `handleReqeust` method is called. This takes as an argument the URL. It checks to see if the path, the part of the url after the domain, is equal to "/add-message", which it is. It then creates a new array of Strings called `parameters`, whose elements are derived from the part of the URL following the question mark. The first element in this case is the string "s" and the second element is the message we desire to add. Since the first elemment is "s", the if statement passes and we modify our persistent string by adding a new line and then the message. `string` is then returned, meaning it gets printed to the webpage.
