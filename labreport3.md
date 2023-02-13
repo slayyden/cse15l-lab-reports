@@ -1,5 +1,5 @@
 # Researching Commands
-We will be diving deep into the options of the `grep` command. For all examples, assume the working directory is the parent directory of `written_2` unless otherwise specified.
+We will be diving deep into the options of the `grep` command. For all examples, assume the working directory is the parent directory of `written_2` unless otherwise specified. All the information presented here was from the manual by typing in `man find`. 
 
 ## Recursion
 Using the `-r` option will result in a recursive search, so `grep` will look through all subdirectories.
